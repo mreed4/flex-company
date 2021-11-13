@@ -38,7 +38,7 @@ header {
   align-items: center;
   position: fixed;
   backdrop-filter: blur(6px);
-  background-color: hsla(0, 53.1%, 58.2%, 0.8);
+  background-color: hsla(0, 53.1%, 52.2%, 0.8);
   width: 100vw;
   z-index: 1000;
   padding: 1em 0;
@@ -68,9 +68,16 @@ nav ul {
   justify-content: space-around;
 }
 
+nav ul li {
+  width: 100%;
+}
+
 nav ul li > a {
   font-family: "Unica One", cursive;
   font-size: 150%;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 nav ul li > a > .fas {
