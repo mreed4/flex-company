@@ -15,6 +15,7 @@ a {
 
 body {
   font-size: 1em;
+  user-select: none;
 }
 
 h1,
@@ -27,9 +28,28 @@ h3 {
 
 header {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 300px 1fr;
   align-items: center;
+  position: fixed;
+  backdrop-filter: blur(12px);
   width: 100vw;
+  z-index: 1000;
+  padding: 1em 0;
+  color: white;
+}
+
+header > div {
+  justify-self: center;
+}
+
+header h1 span {
+  font-style: italic;
+  color: dimgrey;
+}
+
+header h1 span {
+  font-style: italic;
+  color: dimgrey;
 }
 
 nav ul {
@@ -50,31 +70,65 @@ main {
 main section {
   display: grid;
   align-items: center;
+  text-align: left;
 }
 
 main section:nth-child(even) {
-  background-color: silver;
+  background-color: hsl(0, 0%, 75.3%);
 }
 
 main section:nth-child(odd) {
-  background-color: gray;
+  background-color: hsl(0, 0%, 72.3%);
 }
 
 #hero {
   background-image: url("images/pexels-fauxels-3184454.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   height: 100vh;
+  display: grid;
+  align-items: center;
 }
 
-#hero h2 {
-  display: inline-block;
-  /*
-  background-color: rgba(255, 255, 255, 0.2);
-  */
-  backdrop-filter: blur(2px);
+#hero > div {
+  border-radius: 2px;
+  background-color: white;
+  padding: 6em 8em;
   margin: 0 auto;
-  padding: 1em 3em;
+  text-align: justify;
+  text-transform: uppercase;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+#hero > div h2 {
+  display: inline-block;
   font-size: 400%;
-  font-weight: normal;
+  line-height: 1;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#about > div {
+  width: 40vw;
+}
+
+#about > div p {
+  font-size: 400%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#about > div div {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#about > div div img {
+  width: 100%;
+  /*
+  filter: saturate(0.2) brightness(1.1) contrast(1.05);
+  */
 }
