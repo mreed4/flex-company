@@ -127,7 +127,7 @@ main section:nth-child(odd) {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
-@media only screen and (max-width: 1281px) {
+@media only screen and (max-width: 1367px) {
   #hero > div {
     padding: 4em 6em;
   }
@@ -139,7 +139,7 @@ main section:nth-child(odd) {
   line-height: 1;
 }
 
-@media only screen and (max-width: 1281px) {
+@media only screen and (max-width: 1367px) {
   #hero > div h2 {
     font-size: 350%;
   }
@@ -174,7 +174,7 @@ main section:nth-child(odd) {
   line-height: 1.05;
 }
 
-@media only screen and (max-width: 1281px) {
+@media only screen and (max-width: 1367px) {
   #about > div p {
     font-size: 200%;
   }
@@ -191,7 +191,7 @@ main section:nth-child(odd) {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1281px) {
+@media only screen and (max-width: 1367px) {
   #about > div div {
     width: 80%;
   }
