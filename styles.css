@@ -27,6 +27,7 @@ h1,
 h2,
 h3 {
   font-family: "Unica One", cursive;
+  font-weight: normal;
 }
 
 /* Header */
@@ -36,11 +37,19 @@ header {
   grid-template-columns: 300px 1fr;
   align-items: center;
   position: fixed;
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(6px);
+  background-color: hsla(0, 53.1%, 58.2%, 0.8);
   width: 100vw;
   z-index: 1000;
   padding: 1em 0;
   color: white;
+  border-bottom: 3px solid hsla(0, 53.1%, 42.2%, 1);
+}
+
+@media only screen and (max-width: 811px) {
+  header {
+    grid-template-columns: 200px 1fr;
+  }
 }
 
 header > div {
@@ -49,12 +58,7 @@ header > div {
 
 header h1 span {
   font-style: italic;
-  color: dimgrey;
-}
-
-header h1 span {
-  font-style: italic;
-  color: dimgrey;
+  color: hsla(0, 53.1%, 36.2%, 1);
 }
 
 nav ul {
@@ -67,6 +71,10 @@ nav ul {
 nav ul li > a {
   font-family: "Unica One", cursive;
   font-size: 150%;
+}
+
+nav ul li > a > .fas {
+  font-size: 60%;
 }
 
 /* Main */
@@ -85,11 +93,11 @@ main section {
 }
 
 main section:nth-child(even) {
-  background-color: hsl(0, 0%, 75.3%);
+  background-color: hsla(0, 53.1%, 58.2%, 1);
 }
 
 main section:nth-child(odd) {
-  background-color: hsl(0, 0%, 72.3%);
+  background-color: hsla(0, 53.1%, 55.2%, 1);
 }
 
 /* Hero */
@@ -103,6 +111,12 @@ main section:nth-child(odd) {
   align-items: center;
 }
 
+@media only screen and (max-width: 811px) {
+  #hero {
+    height: 60vh;
+  }
+}
+
 #hero > div {
   border-radius: 2px;
   background-color: white;
@@ -113,10 +127,32 @@ main section:nth-child(odd) {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
+@media only screen and (max-width: 1281px) {
+  #hero > div {
+    padding: 4em 6em;
+  }
+}
+
 #hero > div h2 {
   display: inline-block;
   font-size: 400%;
   line-height: 1;
+}
+
+@media only screen and (max-width: 1281px) {
+  #hero > div h2 {
+    font-size: 350%;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  #hero > div h2 {
+    font-size: 300%;
+  }
+}
+
+#hero > div h2 span {
+  color: hsla(0, 53.1%, 43.2%, 1);
 }
 
 /* About */
@@ -125,6 +161,7 @@ main section:nth-child(odd) {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-top: 3px solid hsla(0, 53.1%, 42.2%, 1);
 }
 
 #about > div {
@@ -133,8 +170,20 @@ main section:nth-child(odd) {
 
 #about > div p {
   font-size: 350%;
-  color: hsl(0, 0%, 49.3%);
+  color: hsla(0, 53.1%, 42.2%, 1);
   line-height: 1.05;
+}
+
+@media only screen and (max-width: 1281px) {
+  #about > div p {
+    font-size: 200%;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  #about > div p {
+    font-size: 170%;
+  }
 }
 
 #about > div div {
@@ -142,21 +191,34 @@ main section:nth-child(odd) {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1281px) {
+  #about > div div {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 811px) {
+  #about > div div {
+    width: 80%;
+  }
+}
+
 #about > div div img {
   width: 100%;
   filter: brightness(1.1) contrast(1.05);
-  border: 2px solid hsl(0, 0%, 72.3%);
+  border: 2px solid snow;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.9), 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 #about > div div span {
   font-family: "Abel", sans-serif;
   font-size: 90%;
-  color: #222;
+  color: hsla(0, 53.1%, 29.2%, 1);
 }
 
 #about > div div span a {
   text-decoration: underline;
-  text-decoration-color: hsl(0, 0%, 83.3%);
-  text-underline-offset: 2px;
+  text-decoration-color: hsla(0, 53.1%, 63.2%, 1);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
 }
