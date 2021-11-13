@@ -69,7 +69,9 @@ main section:nth-child(odd) {
 
 #hero h2 {
   display: inline-block;
+  /*
   background-color: rgba(255, 255, 255, 0.2);
+  */
   backdrop-filter: blur(2px);
   margin: 0 auto;
   padding: 1em 3em;
