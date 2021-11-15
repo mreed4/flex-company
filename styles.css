@@ -75,6 +75,7 @@ nav ul li > a {
   display: inline-block;
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
 }
 
 nav ul li > a > .fas {
@@ -165,8 +166,8 @@ main section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 3px solid hsla(210, 9.2%, 47.3%, 0.9);
-  background-color: hsla(210, 9.2%, 63.3%, 0.8);
+  border-top: 3px solid hsl(210, 9.2%, 47.3%);
+  background-color: hsl(210, 9.2%, 63.3%);
 }
 
 #about > div {
@@ -175,7 +176,7 @@ main section {
 
 #about > div p {
   font-size: 350%;
-  color: hsla(210, 9.2%, 43.3%, 0.9);
+  color: hsla(210, 9.2%, 43.3%, 0.8);
   line-height: 1.05;
   font-family: "Noto Serif", serif;
 }
@@ -234,7 +235,7 @@ main section {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
-  background-color: hsla(210, 9.2%, 76.3%, 1);
+  background-color: hsl(210, 9.2%, 76.3%);
   border-top: 3px solid hsla(210, 9.2%, 47.3%, 0.9);
 }
 
@@ -272,7 +273,7 @@ main section {
   font-size: 260%;
   font-weight: 900;
   text-align: center;
-  padding: 0.5em 0;
+  padding: 0.25em 0;
   background-color: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 2px dotted rgba(0, 0, 0, 0.2);
@@ -320,9 +321,57 @@ main section {
   transform: rotate(45deg);
 }
 
+/* Team */
+
+#team {
+  background-color: hsl(210, 9.2%, 76.3%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%2376818b' fill-opacity='0.16'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  border-top: 3px solid hsla(210, 9.2%, 73.3%, 0.9);
+}
+
+#team > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+#team > div > div {
+  width: 20vw;
+}
+
+#team > div > div > img {
+  width: 100%;
+  filter: saturate(0.02) contrast(1.01);
+  transition: all 150ms ease-in-out;
+  border: 2px solid white;
+
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.9), 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#team > div > div > img:hover {
+  filter: saturate(0.9) contrast(1) brightness(1.1);
+  transform: scale(1.01);
+}
+
+/* Contact */
+
+#contact {
+  background-color: hsl(207.3, 9.1%, 76.3%);
+
+  border-top: 3px solid hsla(210, 9.2%, 73.3%, 0.9);
+}
+
 /* Footer */
 
 footer {
+  background-color: hsl(210, 9.2%, 45.3%);
+  font-family: "Abel", sans-serif;
+}
+
+footer > div {
   padding: 1em 0;
-  background-color: hsla(0, 53.1%, 13.2%, 1);
+  border-top: 3px solid rgba(0, 0, 0, 0.2);
+  display: flex;
 }
