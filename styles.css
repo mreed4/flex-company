@@ -444,6 +444,7 @@ main section {
   font-size: 325%;
   font-family: "Noto Serif", serif;
   color: rgba(0, 0, 0, 0.5);
+  line-height: 1.15;
 }
 
 .contact-card:nth-child(1) {
@@ -459,7 +460,6 @@ main section {
 }
 
 .contact-card:nth-child(1) > div:nth-child(2) {
-  line-height: 1.05;
 }
 
 .contact-card:nth-child(2) {
