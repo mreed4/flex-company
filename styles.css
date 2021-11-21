@@ -434,6 +434,70 @@ main section {
 #contact {
   background-color: hsl(207.3, 9.1%, 76.3%);
   border-top: 3px solid hsla(210, 9.2%, 73.3%, 0.9);
+  display: flex;
+  justify-content: center;
+  gap: 9em;
+}
+
+.contact-card {
+  width: 30vw;
+  font-size: 325%;
+  font-family: "Noto Serif", serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-card:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+
+.contact-card:nth-child(1) > div:nth-child(1) {
+  font-size: 150%;
+  color: rgba(239, 72, 111, 1);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.9);
+  padding-right: 0.4em;
+}
+
+.contact-card:nth-child(1) > div:nth-child(2) {
+  line-height: 1.05;
+}
+
+.contact-card:nth-child(2) {
+  letter-spacing: 3px;
+}
+
+.fa-facebook-square:hover {
+  color: hsl(220.2, 45.9%, 47.8%);
+}
+
+.fa-instagram {
+  background: rgba(0, 0, 0, 0.5);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(-135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f77737, #ffdc80);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-yelp:hover {
+  color: #c41200;
+}
+
+.fa-github:hover {
+  color: #333;
 }
 
 /* Footer */
